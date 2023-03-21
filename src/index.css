@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&display=swap');
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,7 +10,7 @@
 }
 
 body{
-  background: black;
+  background: rgb(56, 37, 60);
 }
 
 h1,h4,p,a{
