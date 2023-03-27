@@ -8,9 +8,20 @@ import { FaBars,FaTimes } from "react-icons/fa";
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
 
+    const [color, setColor] = useState(false);
+    const changeColor = () => {
+      if(window.scrolly >= 1) {
+        setColor(true);
+      }else{
+        setColor(false);
+      }
+    }
+
+    window.addEventListener("scroll", changeColor);
+
 
    return (
-     <div className="header">
+     <div className={color ? "header header-bg": "header"}>
        <Link className="logo" to='/'>
         <h1>Portfolio..</h1>
        </Link>
